@@ -89,6 +89,7 @@ body {
     background-image: none;
     display: block;
     padding: 4.68vw;
+    position: relative;
   }
 }
 

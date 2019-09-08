@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chanson Penpagone || 오각형샹송</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Chanson Penpagone"/>
+  <meta property="og:description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+</head>
+<body>
+  <div class="content">
+    <div class="content__title">
+      <div class="content__title--title"><img src="./images/title.png" alt="Chanson Penpagone" /></div>
+      <div class="content__title--info"><img class="content__title--info" src="./images/info.png" alt="04. OCT 2019 19H @Momento Brewers Chanson J" /></div>
+    </div>
+    <div class="content__details">
+      <div class="content__details--lyrics">
+        <ul>
+          <li>
+            <div class="lyrics__title">1. Les feuilles mortes</div>
+            <div class="lyrics__body">
+              Oh, je voudais tant que tu te souviennes<br /> 
+              아 기억 나길 바랐어<br />
+              <br /> 
+              Des jours heureux où nous étions amis<br />
+              우리가 친구였던 행복한 날<br />
+              <br />
+              En ce temps-là la vie était plus belle<br />
+              그 당시 인생은 더 아름다웠다<br />
+              <br />
+              Et le soleil plus brûlant qu'aujourd'hui.<br />
+              그리고 태양은 오늘보다 더 뜨겁습니다.<br />
+              <br />
+              Les feuilles mortes se ramassent à la pelle<br />
+              죽은 잎은 삽을 주워<br />
+              <br />  
+              Tu vois, je n'ai pas oublié<br />
+              알다시피, 나는 잊지 않았다<br />
+              <br />
+              Les feuilles mortes se ramassent à la pelle<br />
+              죽은 잎은 삽을 주워<br />
+              <br />
+              Les souvenirs et les regrets aussi.<br />
+              추억과 후회도.<br />
+              <br />
+              Et le vent du Nord les emporte,<br />
+              그리고 북풍이 그들을 빼앗아 갔어요<br />
+              <br />
+              Dans la nuit froide de l'oubli.<br />
+              추위의 추운 밤에.<br />
+              <br />
+              Tu vois je n'ai pas oublié,<br />
+              내가 잊지 않았다<br />
+              <br />
+              La chanson que tu me chantais...<br />
+              당신이 나에게 노래 한 노래...<br />
+              <br />
+              Les feuilles mortes se ramassent à la pelle<br />
+              죽은 잎은 삽을 주워<br />
+              <br />
+              Les souvenirs et les regrets aussi,<br />
+              추억과 후회도<br />
+              <br />
+              Mais mon amour silencieux et fidèle<br />
+              하지만 내 침묵과 충실한 사랑<br />
+              <br />
+              Sourit toujours et remercie la vie.<br />
+              나는 당신을 너무 사랑했고,<br />
+              <br />
+              Je t'aimais tant, tu étais si jolie,<br />
+              당신은 너무 예뻤습니다<br />
+              <br />
+              Comment veux-tu que je t'oublie?<br />
+              내가 널 어떻게 잊어 버리길 원해?<br />
+              <br />
+              En ce temps-là la vie était plus belle<br />
+              그 당시 인생은 더 아름다웠다<br />
+              <br />
+              Et le soleil plus brûlant qu'aujourd'hui.<br />
+              그리고 태양은 오늘보다 더 뜨겁습니다.<br />
+              <br />
+              Tu étais…<br />
+              당신은...
+            </div>
+          </li>
+          <li>
+            <div class="lyrics__title">2. La vie en rose</div>
+            <div class="lyrics__body"></div>
+          </li>
+          <li>
+            <div class="lyrics__title">3. Que reste-t-il de nos amours</div>
+            <div class="lyrics__body"></div>
+          </li>
+          <li>
+            <div class="lyrics__title">4. Sous le ciel de paris</div>
+            <div class="lyrics__body"></div>
+          </li>
+          <li>
+            <div class="lyrics__title">5. Padam padam</div>
+            <div class="lyrics__body"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="content__details--logos">
+        <a href="#" target="_blank">
+          <img class="mmt" src="./images/mmt.png" alt="Momento Brewers logo" />
+        </a>
+        <a href="#" target="_blank">
+          <img class="ftto" src="./images/ftto.png" alt="Ftto logo" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('click', function (event) {
+      if (event.target.matches('.lyrics__title')) {
+        if (event.target.classList.contains('active')) {
+          event.target.classList.remove('active');
+        } else {
+          var elems = document.querySelectorAll(".lyrics__title");
+
+          [].forEach.call(elems, function(el) {
+              el.classList.remove("active");
+          });
+
+          event.target.classList.add('active');
+        }
+      } else {
+        return;
+      };
+    }, false);
+  </script>
+</body>
+</html>

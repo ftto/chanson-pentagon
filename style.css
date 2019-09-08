@@ -1,0 +1,104 @@
+@import url('./noto-serif-kr.css');
+
+body {
+  font-family: 'NotoSerifKr-Regular', serif; 
+  background-color: #111;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.content__title {
+  flex: 1;
+  padding: 2.777vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content__title img {
+  max-width: 100%;
+}
+
+.content__details {
+  flex: 1;
+  background-image: url(./images/chansonJ.png);
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3.055vw 2.777vw 2.152vw;
+}
+
+.content__details--lyrics {
+  font-family: 'NotoSerifKr', serif; 
+}
+
+.content__details--lyrics ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #fafafa;
+}
+
+.content__details--lyrics ul li {
+  border-bottom: 1px solid #fafafa;
+  color: #fff;
+}
+
+.content__details--lyrics ul li .lyrics__title {
+  padding: 10px 0;
+  font-family: 'NotoSerifKr-Bold', 'NotoSerifKr-Regular', serif; 
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  position: relative;
+}
+
+.content__details--lyrics ul li .lyrics__title:after {
+  content: "";
+  background-image: url(./images/dropdown.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+
+.content__details--lyrics ul li .lyrics__title.active:after {
+  background-image: url(./images/dropdown_active.png);
+}
+
+.content__details--lyrics ul li .lyrics__body {
+  padding: 10px 0 20px;
+  font-size: 12px;
+  line-height: 1.67;
+  display: none;
+  max-height: calc(100vh - 5.207vw - 280px);
+  overflow: auto;;
+}
+
+.content__details--lyrics ul li .lyrics__title.active + .lyrics__body {
+  display: block;
+}
+
+.content__details--logos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content__details--logos .mmt {
+  height: 47px;
+}
+.content__details--logos .ftto {
+  margin-left: 30px;
+  height: 30px;
+}

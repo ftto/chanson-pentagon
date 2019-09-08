@@ -108,12 +108,12 @@ body {
 .content__details--lyrics ul li .lyrics__title {
   padding: 10px 0;
   font-family: 'NotoSerifKr-Bold', 'NotoSerifKr-Regular', serif; 
-  cursor: pointer;
+  /* cursor: pointer; */
   font-size: 14px;
   line-height: 1;
   position: relative;
 }
-.content__details--lyrics ul li .lyrics__title:after {
+/* .content__details--lyrics ul li .lyrics__title:after {
   content: "";
   background-image: url(./images/dropdown.png);
   background-size: contain;
@@ -124,7 +124,7 @@ body {
   position: absolute;
   right: 0;
   top: 2px;
-}
+} */
 .content__details--lyrics ul li .lyrics__title.active:after {
   background-image: url(./images/dropdown_active.png);
 }

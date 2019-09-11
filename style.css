@@ -1,7 +1,8 @@
-@import url('./noto-serif-kr.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap&subset=korean');
 
 body {
-  font-family: 'NotoSerifKr-Regular', serif; 
+  font-family: 'Noto Serif KR', serif; 
+  font-weight: normal;
   background-color: #111;
   margin: 0;
 }
@@ -11,6 +12,7 @@ body {
   height: 100vh;
   max-height: 100vh;
 }
+
 /* mobile */
 @media (max-width: 767px) {
   .content {

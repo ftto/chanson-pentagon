@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700&display=swap&subset=korean');
 
 body {
   font-family: 'Noto Serif KR', serif; 
@@ -95,9 +95,6 @@ body {
   }
 }
 
-.content__details--lyrics {
-  font-family: 'NotoSerifKr', serif; 
-}
 .content__details--lyrics ul {
   list-style: none;
   margin: 0;
@@ -110,7 +107,7 @@ body {
 }
 .content__details--lyrics ul li .lyrics__title {
   padding: 10px 0;
-  font-family: 'NotoSerifKr-Bold', 'NotoSerifKr-Regular', serif; 
+  font-weight: bold;
   /* cursor: pointer; */
   font-size: 14px;
   line-height: 1;

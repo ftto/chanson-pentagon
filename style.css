@@ -108,12 +108,12 @@ body {
 .content__details--lyrics ul li .lyrics__title {
   padding: 10px 0;
   font-weight: bold;
-  /* cursor: pointer; */
+  cursor: pointer;
   font-size: 14px;
   line-height: 1;
   position: relative;
 }
-/* .content__details--lyrics ul li .lyrics__title:after {
+.content__details--lyrics ul li .lyrics__title:after {
   content: "";
   background-image: url(./images/dropdown.png);
   background-size: contain;
@@ -124,12 +124,13 @@ body {
   position: absolute;
   right: 0;
   top: 2px;
-} */
+}
 .content__details--lyrics ul li .lyrics__title.active:after {
   background-image: url(./images/dropdown_active.png);
 }
 .content__details--lyrics ul li .lyrics__body {
-  padding: 10px 0 20px;
+  padding: 10px 0 0;
+  margin-bottom: 20px;
   font-size: 12px;
   line-height: 1.67;
   display: none;
